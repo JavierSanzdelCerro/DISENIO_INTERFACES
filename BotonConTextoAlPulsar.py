@@ -10,6 +10,7 @@ class MainWindow(QMainWindow):
         boton = QPushButton("Pulsa")
         boton.setCheckable(True)
         boton.clicked.connect(self.botonpulsado)
+        print("Hola")
 
 
         self.setCentralWidget(boton)
