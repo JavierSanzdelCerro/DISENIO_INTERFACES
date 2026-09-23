@@ -8,18 +8,19 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("<Mi aplicacion")
 
-        casilla = QCheckBox("Casilla de verificacion")
-        formato = casilla.font()
+        self.casilla = QCheckBox("Casilla de verificacion")
+        formato = self.casilla.font()
         formato.setBold(True)
-        casilla.setFont(formato)
+        self.casilla.setFont(formato)
 
-        casilla.stateChanged.connect(self.muestraEstado)
+        self.casilla.stateChanged.connect(self.muestraEstado)
 
 
-        self.setCentralWidget(casilla)
+        self.setCentralWidget(self.casilla)
 
-    def muestraEstado(self, s):
-        print(s)
+    def muestraEstado(self, pulsado):
+        self.casilla.setText(["No pulsado", "", "Pulsado"][pulsado])
+        print(["No pulsado", "", "Pulsado"][pulsado])
 
 app = QApplication([])
 
