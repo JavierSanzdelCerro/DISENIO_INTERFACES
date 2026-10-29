@@ -5,7 +5,7 @@ from cuadrado import Color
 import os
 
 CARPETA = os.path.dirname(os.path.abspath(__file__))
-RUTA_IMAGEN = os.path.join(CARPETA, "Img", "captura.png")
+RUTA_IMAGEN = os.path.join(CARPETA, "Img", "imagen-aleatoria-destacada.webp")
 
 
 class datosPersonales(QWidget):
