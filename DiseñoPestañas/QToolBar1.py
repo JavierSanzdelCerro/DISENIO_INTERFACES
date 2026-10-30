@@ -1,49 +1,40 @@
-# EJERCICIO - Ejercicio de barra de herramientas: el botón cuenta los clics
-# Al pulsar la acción (en la barra o en el menú Archivo) la etiqueta cambia:
-# "Texto cambiado 1", "Texto cambiado 2"...
-
-from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QToolBar, QStatusBar
-from PyQt6.QtCore import QSize
+from PyQt6.QtWidgets import QApplication, QMainWindow, QToolBar, QLabel, QStatusBar
 from PyQt6.QtGui import QAction, QIcon
-
+from PyQt6.QtCore import Qt
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Mi aplicación")
 
-        # --- Datos ---
-        self.veces = 0   # Contador de clics (con self para usarlo en botonClick)
+        self.setCentralWidget(QLabel("Hola"))
 
-        # --- Widget central ---
-        self.etiqueta = QLabel("Hola")   # Con self porque se cambia luego en botonClick
-        self.setCentralWidget(self.etiqueta)
+        accionGuardar = QAction(QIcon("icons/bug.png"), "Guardar", self)
+        accionGuardar.setStatusTip("Guarda el archivo")
+        accionGuardar.triggered.connect(self.guardar)
 
-        # --- Acción ---
-        accionBug = QAction(QIcon("icons/bug.png"), "Mi botón", self)
-        accionBug.setStatusTip("Este es mi botón")
-        accionBug.triggered.connect(self.botonClick)
+        accionNuevo = QAction(QIcon("icons/bug.png"), "Nuevo", self)
+        accionNuevo.setStatusTip("Crea un archivo nuevo")
+        accionNuevo.triggered.connect(self.nuevo)
 
-        # --- Barra de herramientas ---
-        barra = QToolBar("Barra de herramientas")
-        barra.setIconSize(QSize(32, 32))
+        menu = self.menuBar()
+        menuArchivo = menu.addMenu("&Archivo")
+        menuArchivo.addAction(accionGuardar)
+        menuArchivo.addAction(accionNuevo)
+
+        barra = QToolBar("Mi barra")
+        barra.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextBesideIcon)
         self.addToolBar(barra)
-        barra.addAction(accionBug)
+        barra.addAction(accionGuardar)
+        barra.addAction(accionNuevo)
 
-        # --- Barra de menú ---
-        menuArchivo = self.menuBar().addMenu("&Archivo")
-        menuArchivo.addAction(accionBug)
-
-        # --- Barra de estado ---
         self.setStatusBar(QStatusBar(self))
 
-    # --- Funciones (slots) ---
-    def botonClick(self):
-        self.veces += 1
-        self.etiqueta.setText(f"Texto cambiado {self.veces}")
+    def guardar(self):
+        print("Guardado")
 
+    def nuevo(self):
+        print("Nuevo archivo")
 
-# --- Arranque de la aplicación ---
 app = QApplication([])
 ventana = MainWindow()
 ventana.show()
