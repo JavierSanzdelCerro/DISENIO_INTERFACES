@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Selectores</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <widget class="QLabel" name="lblTitulo">
+      <property name="text">
+       <string>Nuevo comentario</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frmPanel">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <layout class="QVBoxLayout" name="vlPanel">
+       <item>
+        <widget class="QLabel" name="lblPanel">
+         <property name="text">
+          <string>Quita el punto de .QWidget en el .qss: la barra de estado también se pintará</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editNombre">
+         <property name="placeholderText">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textComentario">
+         <property name="placeholderText">
+          <string>Comentario</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="hlBotones">
+      <item>
+       <widget class="QPushButton" name="btnGuardar">
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBorrar">
+        <property name="text">
+         <string>Borrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>440</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

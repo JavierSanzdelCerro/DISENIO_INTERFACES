@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Modelo de caja</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <widget class="QLabel" name="lblExplicacion">
+      <property name="text">
+       <string>margin → border → padding → contenido</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editNombre">
+      <property name="placeholderText">
+       <string>Borde redondeado y padding</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textNotas">
+      <property name="placeholderText">
+       <string>Borde doble, esquinas muy redondeadas y margin grande</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listLados">
+      <item>
+       <property name="text">
+        <string>Solo borde izquierdo (border-left)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>padding-left separa el texto del borde</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="hlBotones">
+      <item>
+       <widget class="QPushButton" name="btnAceptar">
+        <property name="text">
+         <string>Aceptar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>460</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

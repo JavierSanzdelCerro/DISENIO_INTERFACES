@@ -1,0 +1,41 @@
+/* Modelo de caja (de fuera a dentro):
+   margin  -> espacio FUERA del borde (separa de otros widgets)
+   border  -> el borde: grosor, tipo (solid, dashed, dotted, double) y color
+   padding -> espacio DENTRO del borde (separa el contenido del borde)
+   border-radius -> redondea las esquinas */
+
+QLabel {
+    border: 2px dashed gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+QLineEdit {
+    border: 2px solid #3478c6;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QTextEdit {
+    border: 4px double green;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Cada lado por separado: border-left, padding-left, margin-top... */
+QListWidget {
+    border: none;
+    border-left: 8px solid orange;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+/* padding con 2 valores: arriba/abajo  izquierda/derecha */
+QPushButton {
+    background-color: #ffd9a8;
+    border: 2px solid #b35c00;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin: 5px;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paleta de colores</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <widget class="QLabel" name="lblTitulo">
+      <property name="text">
+       <string>Texto de la ventana (WindowText)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editNombre">
+      <property name="text">
+       <string>Texto dentro de un campo (Base + Text)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listColores">
+      <property name="currentRow">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Rojo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Seleccionado (Highlight)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Azul</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="hlBotones">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAceptar">
+        <property name="text">
+         <string>Aceptar (Button)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>420</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

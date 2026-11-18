@@ -1,0 +1,39 @@
+/* 1. Selector de CLASE: todos los QPushButton (y las clases que heredan de QPushButton) */
+QPushButton {
+    background-color: #dfe7f5;
+    border: 1px solid #7f8fa6;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+/* 2. Clase EXACTA (con punto): solo los QWidget "puros", no sus subclases.
+      Pinta centralwidget, pero NO la barra de estado (QStatusBar es subclase: se queda gris).
+      Sin el punto (QWidget) se pintaria TODO, porque todo hereda de QWidget. */
+.QWidget {
+    background-color: #f3efe0;
+}
+
+/* 3. Por NOMBRE (objectName de Designer) con #: solo ese widget */
+#lblTitulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+#btnBorrar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Clase + nombre: solo el QPushButton que se llame btnGuardar */
+QPushButton#btnGuardar {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* 4. VARIOS a la vez separados por comas: la misma regla para los dos */
+QLineEdit, QTextEdit {
+    background-color: white;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+}

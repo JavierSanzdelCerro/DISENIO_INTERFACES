@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sub-controles</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formControles">
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblVolumen">
+      <property name="text">
+       <string>Volumen:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSlider" name="sliVolumen">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>60</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblProgreso">
+      <property name="text">
+       <string>Progreso:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QProgressBar" name="barProgreso">
+      <property name="value">
+       <number>60</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblColor">
+      <property name="text">
+       <string>Color:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboColor">
+      <item>
+       <property name="text">
+        <string>Azul</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Verde</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rojo</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lblCantidad">
+      <property name="text">
+       <string>Cantidad:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="spinCantidad">
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lblOpciones">
+      <property name="text">
+       <string>Opciones:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QCheckBox" name="checkAviso">
+      <property name="text">
+       <string>Recibir avisos</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <layout class="QHBoxLayout" name="hlRadios">
+      <item>
+       <widget class="QRadioButton" name="radioSi">
+        <property name="text">
+         <string>Sí</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioNo">
+        <property name="text">
+         <string>No</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>440</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

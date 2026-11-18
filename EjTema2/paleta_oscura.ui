@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paleta oscura</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <layout class="QHBoxLayout" name="hlGrupos">
+      <item>
+       <widget class="QGroupBox" name="grpActivos">
+        <property name="title">
+         <string>Activos</string>
+        </property>
+        <layout class="QVBoxLayout" name="vlActivos">
+         <item>
+          <widget class="QLineEdit" name="editActivo">
+           <property name="placeholderText">
+            <string>Placeholder (PlaceholderText)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkActivo">
+           <property name="text">
+            <string>Casilla activa</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnActivo">
+           <property name="toolTip">
+            <string>Tooltip (ToolTipBase + ToolTipText)</string>
+           </property>
+           <property name="text">
+            <string>Botón activo</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="grpDesactivados">
+        <property name="title">
+         <string>Desactivados</string>
+        </property>
+        <layout class="QVBoxLayout" name="vlDesactivados">
+         <item>
+          <widget class="QLineEdit" name="editDesactivado">
+           <property name="text">
+            <string>Texto desactivado</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkDesactivado">
+           <property name="text">
+            <string>Casilla desactivada</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDesactivado">
+           <property name="text">
+            <string>Botón desactivado</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listTareas">
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="currentRow">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Fila seleccionada (Highlight + HighlightedText)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fila alterna (AlternateBase)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fila normal (Base)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fila alterna (AlternateBase)</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblEnlace">
+      <property name="text">
+       <string>&lt;a href=&quot;https://doc.qt.io&quot;&gt;Enlace a la documentación (Link)&lt;/a&gt;</string>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>480</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

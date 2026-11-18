@@ -1,0 +1,106 @@
+/* Sub-controles: partes internas de un widget  ->  Clase::parte
+   Se pueden combinar con pseudoselectores  ->  Clase::parte:estado */
+
+/* ---- QSlider ---- */
+QSlider::groove:horizontal {        /* el carril */
+    height: 8px;
+    background: #dcdde1;
+    border-radius: 4px;
+}
+QSlider::sub-page:horizontal {      /* la parte del carril ya recorrida */
+    background: #2e86de;
+    border-radius: 4px;
+}
+QSlider::handle:horizontal {        /* el tirador */
+    background: white;
+    border: 2px solid #2e86de;
+    width: 16px;
+    margin: -6px 0;                 /* margen negativo: sobresale del carril */
+    border-radius: 10px;
+}
+QSlider::handle:horizontal:hover {  /* sub-control + pseudoselector */
+    background: #2e86de;
+}
+
+/* ---- QComboBox ---- */
+QComboBox {
+    border: 1px solid #8395a7;
+    border-radius: 4px;
+    padding: 4px;
+}
+QComboBox::drop-down {              /* la zona del boton de la derecha */
+    width: 24px;
+    border-left: 1px solid #8395a7;
+    background: #e8f0fe;
+}
+/* Las flechas (down-arrow, up-arrow) normalmente se dibujan con una imagen:
+       image: url(flecha.png);
+   Aqui se usa un punto de color para no depender de archivos.
+   (El truco CSS del triangulo con bordes NO funciona en QSS.) */
+QComboBox::down-arrow {             /* la flecha */
+    width: 8px;
+    height: 8px;
+    background: #2e86de;
+    border-radius: 4px;
+}
+
+/* ---- QSpinBox ---- */
+QSpinBox {
+    border: 1px solid #8395a7;
+    border-radius: 4px;
+    padding: 4px;
+}
+QSpinBox::up-button, QSpinBox::down-button {   /* los dos botones de la derecha */
+    width: 20px;
+    background: #e8f0fe;
+    border-left: 1px solid #8395a7;
+}
+QSpinBox::up-button:pressed, QSpinBox::down-button:pressed {
+    background: #2e86de;
+}
+QSpinBox::up-arrow, QSpinBox::down-arrow {
+    width: 6px;
+    height: 6px;
+    background: #2e86de;
+    border-radius: 3px;
+}
+
+/* ---- QCheckBox y QRadioButton: el indicador (la casilla / el circulo) ---- */
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2e86de;
+    border-radius: 4px;
+    background: white;
+}
+QCheckBox::indicator:checked {
+    background: #2e86de;
+}
+QCheckBox::indicator:hover {
+    border-color: #10ac84;
+}
+
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #2e86de;
+    border-radius: 9px;             /* mitad del tamano total: circulo */
+    background: white;
+}
+QRadioButton::indicator:checked {
+    background: #2e86de;
+    border: 4px solid white;        /* el borde blanco hace de "punto" */
+    outline: none;
+}
+
+/* ---- QProgressBar: el chunk es la parte rellena ---- */
+QProgressBar {
+    border: 1px solid #8395a7;
+    border-radius: 6px;
+    text-align: center;
+    background: #f1f2f6;
+}
+QProgressBar::chunk {
+    background-color: #10ac84;
+    border-radius: 5px;
+}

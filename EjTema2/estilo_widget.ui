@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Estilo de un widget</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <widget class="QLabel" name="lblPreview">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Texto de ejemplo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpColor">
+      <property name="title">
+       <string>Color</string>
+      </property>
+      <layout class="QHBoxLayout" name="hlColor">
+       <item>
+        <widget class="QPushButton" name="btnRojo">
+         <property name="text">
+          <string>Rojo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAzul">
+         <property name="text">
+          <string>Azul</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnFondo">
+         <property name="text">
+          <string>Fondo amarillo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpLetra">
+      <property name="title">
+       <string>Tipo y tamaño de letra</string>
+      </property>
+      <layout class="QHBoxLayout" name="hlLetra">
+       <item>
+        <widget class="QPushButton" name="btnCourier">
+         <property name="text">
+          <string>Courier</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnPequeno">
+         <property name="text">
+          <string>Pequeño</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnGrande">
+         <property name="text">
+          <string>Grande</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpVarias">
+      <property name="title">
+       <string>Varias propiedades a la vez</string>
+      </property>
+      <layout class="QHBoxLayout" name="hlVarias">
+       <item>
+        <widget class="QPushButton" name="btnTodo">
+         <property name="text">
+          <string>Todo junto</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnNegrita">
+         <property name="text">
+          <string>Añadir negrita</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnQuitar">
+         <property name="text">
+          <string>Quitar estilo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>480</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

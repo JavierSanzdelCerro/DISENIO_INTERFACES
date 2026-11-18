@@ -1,0 +1,33 @@
+/* Tema verde */
+QMainWindow, .QWidget {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+QLabel, QCheckBox {
+    color: #1b5e20;
+}
+
+QLineEdit, QTextEdit, QComboBox {
+    background-color: white;
+    color: #1b5e20;
+    border: 1px solid #66bb6a;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+}
+QPushButton:hover {
+    background-color: #2e7d32;
+}
+
+QStatusBar {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}

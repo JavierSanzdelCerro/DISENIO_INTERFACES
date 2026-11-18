@@ -1,0 +1,33 @@
+/* Tema claro */
+QMainWindow, .QWidget {
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+QLabel, QCheckBox {
+    color: #2f3640;
+}
+
+QLineEdit, QTextEdit, QComboBox {
+    background-color: white;
+    color: #2f3640;
+    border: 1px solid #c8ccd4;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton {
+    background-color: #e1e5ee;
+    color: #2f3640;
+    border: 1px solid #c8ccd4;
+    border-radius: 4px;
+    padding: 6px 14px;
+}
+QPushButton:hover {
+    background-color: #d0d6e2;
+}
+
+QStatusBar {
+    background-color: #dcdde1;
+    color: #2f3640;
+}

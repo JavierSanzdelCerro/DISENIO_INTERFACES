@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pseudoselectores</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlPrincipal">
+    <item>
+     <widget class="QGroupBox" name="grpBotones">
+      <property name="title">
+       <string>Botones (pasa el ratón, pulsa, marca)</string>
+      </property>
+      <layout class="QHBoxLayout" name="hlBotones">
+       <item>
+        <widget class="QPushButton" name="btnNormal">
+         <property name="text">
+          <string>Normal</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnInterruptor">
+         <property name="text">
+          <string>Interruptor</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnDesactivado">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Desactivado</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpCampos">
+      <property name="title">
+       <string>Campos (haz clic en uno para darle el foco)</string>
+      </property>
+      <layout class="QVBoxLayout" name="vlCampos">
+       <item>
+        <widget class="QLineEdit" name="editNombre">
+         <property name="placeholderText">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editCorreo">
+         <property name="placeholderText">
+          <string>Correo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkAcepto">
+         <property name="text">
+          <string>Acepto las condiciones</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>440</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

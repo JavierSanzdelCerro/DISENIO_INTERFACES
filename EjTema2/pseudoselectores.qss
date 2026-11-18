@@ -1,0 +1,51 @@
+/* Pseudoselectores: aplican el estilo solo en un ESTADO del widget  ->  Clase:estado */
+
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* :hover ANTES que :pressed. Al pulsar, el raton tambien esta encima (se cumplen los dos)
+   y gana la regla escrita DESPUES. Si :hover fuera detras, nunca se veria el :pressed. */
+QPushButton:hover {
+    background-color: #5dade2;
+}
+
+QPushButton:pressed {
+    background-color: #1b4f72;
+}
+
+/* :checked -> boton marcado (checkable = true en Designer) */
+QPushButton:checked {
+    background-color: #27ae60;
+}
+
+/* Encadenados: se tienen que cumplir LOS DOS a la vez (igual que :hover:pressed) */
+QPushButton:checked:hover {
+    background-color: #58d68d;
+}
+
+/* :disabled -> widget desactivado (enabled = false) */
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
+/* :focus -> el campo en el que estas escribiendo */
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #eaf4fc;
+}
+
+/* Negado con ! -> los campos que NO tienen el foco */
+QLineEdit:!focus {
+    border: 1px solid #aab7b8;
+    color: gray;
+}
+
+QCheckBox:checked {
+    color: #27ae60;
+    font-weight: bold;
+}
