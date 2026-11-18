@@ -1,0 +1,7 @@
+/* cambiar_estilo.py: opción 3 del QComboBox */
+
+QWidget {
+
+    background-color: blue;
+
+}

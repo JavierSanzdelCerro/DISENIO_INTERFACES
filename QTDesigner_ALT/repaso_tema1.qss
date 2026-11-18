@@ -1,0 +1,7 @@
+/* repaso.py: Tema1 del QComboBox */
+
+QWidget {
+
+    background-color: aquamarine;
+
+}

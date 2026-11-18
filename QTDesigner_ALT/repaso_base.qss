@@ -1,0 +1,9 @@
+/* repaso.py al arrancar
+   Ojo: "Qwidget" con w minúscula no coincide con ningún widget, así que no se aplica */
+
+Qwidget {
+
+    background-color: black;
+    color: white;
+
+}
