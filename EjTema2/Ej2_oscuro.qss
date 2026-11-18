@@ -1,0 +1,22 @@
+.QWidget { background-color: #2b2b2b; }
+QLabel, QGroupBox { color: white; }
+QPushButton { background-color: #444; color: white; border: 1px solid #666; padding: 4px; }
+QPushButton:hover { background-color: #666; }
+QMessageBox {
+    background-color: #2b2b2b;
+}
+QMessageBox QLabel {
+    color: white;
+}
+
+QComboBox {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+QComboBox QAbstractItemView {
+    background-color: #444;
+    color: white;
+    selection-background-color: #666;
+    selection-color: white;
+}

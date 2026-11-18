@@ -44,3 +44,4 @@ Cada ejercicio tiene 3 archivos con el mismo nombre:
 | 13 | `cambiar_tema` | Cambiar la hoja `.qss` al momento desde un `QComboBox` | `tema_claro.qss`, `tema_oscuro.qss`, `tema_verde.qss` |
 | 14 | `menus` | Menús y `QAction` creadas en Designer, `triggered` y `QMessageBox` | |
 | 15 | `distribucion` | `layoutStretch`, `sizePolicy`, `maximumSize` y spacers (todo en el `.ui`) | |
+| 16 | `Ej2` | Ejercicio de repaso completo: login, estilos de un label, slider + spinbox, notas, iconos, menú, temas y estilo de la app | `Ej2_claro.qss`, `Ej2_oscuro.qss`, `Ej2_verde.qss` |
