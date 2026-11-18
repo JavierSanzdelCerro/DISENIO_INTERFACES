@@ -1,0 +1,50 @@
+QPushButton:hover {
+
+    background-color: red;
+    font-weight: bold;
+
+}
+
+QPushButton:pressed {
+
+    background-color: yellow;
+
+}
+
+QRadioButton:checked {
+
+    background-color: green;
+
+}
+
+QComboBox:on {
+
+    background-color: red;
+
+}
+
+QTabBar {
+
+    color: white;
+    font-weight: bold;
+    background-color: black;
+
+}
+
+QDial {
+
+    background-color: blue;
+
+}
+
+QSlider::handle {
+
+    background-image: url("QtDesigner/img/icons/animal.png");
+
+}
+
+QComboBox::down-arrow {
+
+    background-image: url("QtDesigner/img/icons/arrow-270-medium.png");
+
+}

@@ -9,6 +9,8 @@ Ejercicios de Diseño de Interfaces (2º DAM) con PyQt6 y Qt Designer.
 | [`EjTema1`](EjTema1) | Tema 1: widgets y layouts escritos a mano con PyQt6 (QPushButton, QLabel, layouts, QToolBar, diálogos...). Usa `cuadrado.py`, `dialogs.py`, `Img/` e `icons/` |
 | [`EjTema2`](EjTema2) | Tema 2: Qt Designer (`.ui` → `pyuic6`), paletas, iconos y hojas de estilo `.qss`. Ver su [README](EjTema2/README.md) |
 | [`QtDesigner`](QtDesigner) | Ejercicios de clase originales con Qt Designer |
+| [`QtDesigner2`](QtDesigner2) | Más ejercicios con Qt Designer (ejercicios 1-7, formularios, estilos `.qss`, calculadora). Usa `img/icons` |
+| [`QTDesigner_ALT`](QTDesigner_ALT) | Versión alternativa: formularios, estilos, calculadora y `repaso/`. Incluye el pack `fugue-icons-3.5.6` |
 
 ## Requisitos
 
